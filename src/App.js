@@ -31,7 +31,7 @@ const App = () => {
 	// Completed TODO function
 	const completedTask = (index) => {
 		let newList = list;
-		newList[index].isCompleted = !newList.isCompleted;
+		newList[index].isCompleted = !newList[index].isCompleted;
 		setList([ ...newList ]);
 	};
 
