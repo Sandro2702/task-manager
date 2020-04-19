@@ -1,38 +1,77 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+* {
+  font-family: 'Chewy', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #78797a, #656e79, #526378, #415777, #314b75, #284370, #203a6b, #183265, #142c5c, #102654, #0c204b, #081a43);
+}
+
+h1 {
   text-align: center;
+  color: whitesmoke;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.outer-box {
+  width: 650px;
+  background: #0451c5;
+  margin: auto;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, .6),
+    0px 2px 12px rgba(0, 0, 0, .3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-box {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input {
+  height: 50px;
+  font-size: 1.5rem;
+  border-radius: 40px;
+  padding-left: 10px;
+}
+
+.add-button {
+  border: none;
+  width: 150px;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.todo-container {
+  background: white;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+  border-radius: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.todo-content {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.todo-createdAt {
+  color: cadetblue;
+}
+
+.del-button {
+  background-color: maroon;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
